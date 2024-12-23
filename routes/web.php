@@ -12,4 +12,6 @@ Route::view('profile', 'profile')
     ->middleware(['auth'])
     ->name('profile');
 
+Route::view('home', 'livewire.home')->name('home');
+
 require __DIR__.'/auth.php';

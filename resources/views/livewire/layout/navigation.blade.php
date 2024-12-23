@@ -37,6 +37,9 @@ new class extends Component
             </div>
 
             <!-- Settings Dropdown -->
+
+
+
             <div class="hidden sm:flex sm:items-center sm:ms-6">
                 <x-dropdown align="right" width="48">
                     <x-slot name="trigger">
@@ -51,9 +54,15 @@ new class extends Component
                         </button>
                     </x-slot>
 
+
+
                     <x-slot name="content">
                         <x-dropdown-link :href="route('profile')" wire:navigate>
                             {{ __('Profile') }}
+                        </x-dropdown-link>
+
+                        <x-dropdown-link :href="route('home')" wire:navigate>
+                            {{ __('Home') }}
                         </x-dropdown-link>
 
                         <!-- Authentication -->
